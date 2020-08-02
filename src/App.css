@@ -1,95 +1,169 @@
-.row-header{
-    margin:0px auto;
-    padding:0px auto;
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
 }
 
 .row-content {
-    margin:0px auto;
+    margin: 0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
-    min-height:400px;
+    min-height: 400px;
 }
 
-.footer{
-    background-color: #D1C4E9;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
+.footer {
+    background-color: black;
 }
+
+.footermyname {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 170%;
+    font-family: 'Elephant';
+}
+
+.footersocialicons {
+    padding-bottom: 2%;
+    font-size: 120%;
+}
+
 .jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: #9575CD ;
-    color:floralwhite;
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: #9575CD;
+    color: floralwhite;
 }
 
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
 }
 
 .navbar-dark {
     background-color: #000000;
 }
 
-.page-enter{
+.page-enter {
     opacity: 0.01;
     transform: translateX(-100%);
 }
 
-.page-enter-active{
+.page-enter-active {
     opacity: 1;
     transform: translateX(0%);
     transition: all 300ms ease-in;
 }
 
-.page-exit{
+.page-exit {
     opacity: 1;
     transform: translateX(0%);
 }
 
-.page-exit-active{
+.page-exit-active {
     opacity: 0.01;
     transform: translateX(100%);
     transition: all 300ms ease-out;
 }
 
-#home{
-    background-color:#000000;
+#home {
+    background-image: url('./components/img/website-parallax-background-C.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    max-width: 100%;
+    padding-bottom: 7%;
 }
 
-.homemyintro{
-    font-size: 4.5em;
+.homemyintro {
+    font-size: 4vw;
     font-weight: bolder;
-    font-family: fantasy;
+    font-family: 'Bernard MT Condensed';
     color: white;
-    float: right;
-
 }
 
-.mynamehomeintro{
-    font-size: 2em;
-    font-family: fantasy;
+.resumebutton{
+    font-size:1vw;
+    padding: 23vw 2vw 2vw 24vw;
+}
+
+.myworkhome {
+    font-size: 1vw;
     color: white;
-    float: right;
+    font-family: 'Ink Free';
 }
 
-.homepagephoto{
-    width:500px;
-    height:600px;
-    max-width: 500px;
-    max-height: 600px;
-    float:left;
+.mynamehomeintro {
+    font-size: 2vw;
+    font-family: 'Maiandra GD';
+    color: white;
 }
 
-#intro{
-    margin-top: 5%;
+.slidingthoughts {
+    color: white;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
-#mywork{
-    font-size:100%;
-    color:white;
-    margin-top: 97%;
-    padding-bottom: 14%;
-    padding-left: 69%;
+.drag {
+    width: 100px;
+    font-family: 'Goudy Stout';
 }
+
+.about {
+    background-image: url('./components/img/Generic_BG09_Dark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    max-width: 100%;
+}
+
+.aboutheading {
+    font-size: 850%;
+    font-family: "Broadway";
+}
+
+.aboutcontent {
+    font-size: 250%;
+    font-family: "Ink Free";
+    color: cornsilk;
+}
+
+#aboutlastline {
+    margin-bottom: 0.01em;
+    padding-bottom: 1em;
+}
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  /* When you mouse over the container, the overlay image will "zoom" in display */
+  .container:hover .overlay {
+    transform: scale(1);
+  }
+  
+  /* Some image inside the overlay*/
+  .myimagenav {
+    width:50em;
+    height: 40em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .educationpic{
+      background-image: url('./components/img/unnamed.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment:fixed;
+  }

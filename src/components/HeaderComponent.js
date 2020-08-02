@@ -26,6 +26,7 @@ class Header extends Component {
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/">DEVANSH MITTAL</NavbarBrand>
+                      
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="ml-auto">
                                 <NavItem>
@@ -35,7 +36,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/about">
-                                        <span className="fa fa-info fa-lg"></span>About 
+                                        <span className="fa fa-info fa-lg"></span>About
                                 </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -58,7 +59,7 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-
+              
             </React.Fragment>
 
         )
