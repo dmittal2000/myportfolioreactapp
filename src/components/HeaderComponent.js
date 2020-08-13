@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Modal, Button, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem,  Container } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -23,7 +23,7 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Navbar dark expand="md" >
-                    <div className="container">
+                    <Container>
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/">DEVANSH MITTAL</NavbarBrand>
                       
@@ -57,7 +57,7 @@ class Header extends Component {
                             </Nav>
 
                         </Collapse>
-                    </div>
+                    </Container>
                 </Navbar>
               
             </React.Fragment>
