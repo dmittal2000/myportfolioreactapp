@@ -12,6 +12,8 @@ import python_logo from './img/python_logo.png'
 import pcb_logo from './img/pcb_logo.jpg'
 import ssf_logo from './img/ssf_logo.png'
 import robocon_logo from './img/robocon_logo.png'
+import coursera_logo from './img/coursera_logo.png'
+import internshala_logo from './img/internshala_logo.webp'
 
 export default class Skill extends Component {
     render() {
@@ -64,10 +66,6 @@ export default class Skill extends Component {
 
                                         </Card>
                                     </Col>
-                                </Row>
-                            </CardGroup>
-                            <CardGroup>
-                                <Row>
                                     <Col>
                                         <Card className="skillcardstyle">
                                             <Card.Img variant="top" src={bootstrap_logo} className='skilllogo' />
@@ -80,6 +78,10 @@ export default class Skill extends Component {
 
                                         </Card>
                                     </Col>
+                                     </Row>
+                            </CardGroup>
+                            <CardGroup>
+                                <Row>
                                     <Col>
                                         <Card className="skillcardstyle">
                                             <Card.Img variant="top" src={JS_logo} className='skilllogo' />
@@ -104,10 +106,7 @@ export default class Skill extends Component {
 
                                         </Card>
                                     </Col>
-                                </Row>
-                            </CardGroup>
-                            <CardGroup>
-                                <Row>
+                                
                                     <Col>
                                         <Card className="skillcardstyle">
                                             <Card.Img variant="top" src={python_logo} className='skilllogo' />
@@ -132,7 +131,7 @@ export default class Skill extends Component {
 
                                         </Card>
                                     </Col>
-                                    <Col></Col>
+                                    
                                 </Row>
                             </CardGroup>
                         </div>
@@ -168,12 +167,70 @@ export default class Skill extends Component {
                                 </Col>
                             </Row>
                         </CardGroup>
+                        
+                        <div className="expheading">
+                            Certificates
+                       </div>
 
+                        <CardGroup>
+                            <Row>
+                                <Col>
+                                    <Card className="skillcardstyle">
+                                        <Card.Img variant="top" src={coursera_logo} className='skilllogo' />
+                                        <Card.Body>
+                                            <Card.Title className="skillcardtitle">Front-End Web Development with React</Card.Title>
+                                            <Card.Text className="skillcardtext">
+                                                An online non-credit course authorized by The Hong Kong University of Science and Technology and offered through Coursera, by Jogesh K. Muppala <br /> July 2020 - Present
+                                            </Card.Text>
+                                        </Card.Body>
+
+                                    </Card>
+                                </Col>
+                                <Col>
+                                    <Card className="skillcardstyle">
+                                        <Card.Img variant="top" src={coursera_logo} className='skilllogo' />
+                                        <Card.Body>
+                                            <Card.Title className="skillcardtitle">Introduction to Google Docs</Card.Title>
+                                            <Card.Text className="skillcardtext">
+                                                An online non-credit course authorized by Coursera Project Network and offered through Coursera, by Melissa Al-Shaer <br /> June 2020 - Present
+                                            </Card.Text>
+                                        </Card.Body>
+
+                                    </Card>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <Card className="skillcardstyle">
+                                        <Card.Img variant="top" src={coursera_logo} className='skilllogo' />
+                                        <Card.Body>
+                                            <Card.Title className="skillcardtitle">Interactivity with JavaScript</Card.Title>
+                                            <Card.Text className="skillcardtext">
+                                                An online non-credit course authorized by University of Michigan and offered through Coursera, by Colleen van Lent. <br /> June 2020 - Present
+                                            </Card.Text>
+                                        </Card.Body>
+
+                                    </Card>
+                                </Col>
+                                <Col>
+                                    <Card className="skillcardstyle">
+                                        <Card.Img variant="top" src={internshala_logo} className='skilllogo' />
+                                        <Card.Body>
+                                            <Card.Title className="skillcardtitle">Web Development</Card.Title>
+                                            <Card.Text className="skillcardtext">
+                                                The training program consisted of HTML & CSS, Bootstrap, SQL and PHP modules, by Sarvesh Agrawal.<br /> July 2019 - Present
+                                            </Card.Text>
+                                        </Card.Body>
+
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </CardGroup>
                     </Container>
+
                 </div>
                 <Footer />
             </div>
-
         )
     }
 }
